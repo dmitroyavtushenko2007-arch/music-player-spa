@@ -1,6 +1,7 @@
 import logging
 import os
 import re
+import shutil
 
 import yt_dlp
 from fastapi import FastAPI, HTTPException, Query
@@ -62,6 +63,14 @@ def search(q: str = Query(..., min_length=1)):
 CACHE_DIR = os.path.join(os.path.dirname(__file__), "audio_cache")
 os.makedirs(CACHE_DIR, exist_ok=True)
 
+# cookies для YouTube: Render кладе Secret File в /etc/secrets (тільки читання).
+# yt-dlp хоче дописувати в файл, тому копіюємо його в /tmp
+COOKIES_SECRET = "/etc/secrets/cookies.txt"
+COOKIES_FILE = "/tmp/cookies.txt"
+if os.path.exists(COOKIES_SECRET):
+    shutil.copyfile(COOKIES_SECRET, COOKIES_FILE)
+    logger.info("YouTube cookies found and loaded")
+
 
 @app.get("/api/stream/{track_id}")
 def stream(track_id: str):
@@ -83,6 +92,8 @@ def stream(track_id: str):
         "retries": 2,
         "outtmpl": os.path.join(CACHE_DIR, "%(id)s.%(ext)s"),
     }
+    if os.path.exists(COOKIES_FILE):
+        options["cookiefile"] = COOKIES_FILE
     try:
         with yt_dlp.YoutubeDL(options) as ydl:
             info = ydl.extract_info(
