@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot картки треку 1`] = `
+<article
+  className="track-card"
+>
+  <div
+    className="track-card__cover"
+  >
+    <img
+      alt="Обкладинка Test Song"
+      onError={[Function]}
+      src="https://example.com/cover.jpg"
+    />
+  </div>
+  <div
+    className="track-card__info"
+  >
+    <h3
+      className="track-card__title"
+    >
+      Test Song
+    </h3>
+    <p
+      className="track-card__artist"
+    >
+      Test Artist
+    </p>
+  </div>
+  <span
+    className="track-card__duration"
+  >
+    3:35
+  </span>
+  <div
+    className="track-card__actions"
+  >
+    <button
+      aria-label="Відтворити: Test Song"
+      className="icon-btn"
+      onClick={[Function]}
+      type="button"
+    >
+      ▶
+    </button>
+    <button
+      aria-label="Додати в обране: Test Song"
+      aria-pressed={false}
+      className="icon-btn"
+      onClick={[Function]}
+      type="button"
+    >
+      🤍
+    </button>
+    <select
+      aria-label="Додати в плейліст: Test Song"
+      className="playlist-select"
+      disabled={false}
+      onChange={[Function]}
+      value=""
+    >
+      <option
+        value=""
+      >
+        + У плейліст
+      </option>
+      <option
+        value="p1"
+      >
+        Мій плейліст
+      </option>
+    </select>
+  </div>
+</article>
+`;

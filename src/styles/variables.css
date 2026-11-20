@@ -1,0 +1,39 @@
+/* Світла тема (за замовчуванням) */
+:root,
+[data-theme="light"] {
+  --bg: #f1eff9;
+  --bg-card: #ffffff;
+  --bg-input: #ffffff;
+  --bg-hover: #e9e6f5;
+  --text: #1a1726;
+  --text-muted: #6a647d;
+  --border: #ddd8ec;
+  --accent: #e8481c;
+  --accent-text: #ffffff;
+  --danger: #c4261f;
+  --shadow: 0 8px 30px rgba(40, 30, 80, 0.12);
+  --glass: rgba(241, 239, 249, 0.8);
+}
+
+/* Темна тема */
+[data-theme="dark"] {
+  --bg: #0e0d14;
+  --bg-card: #171620;
+  --bg-input: #22202d;
+  --bg-hover: #211f2c;
+  --text: #f5f3fb;
+  --text-muted: #a8a3ba;
+  --border: #2b2938;
+  --accent: #ff6a3d;
+  --accent-text: #1b0e09;
+  --danger: #ff8a80;
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.55);
+  --glass: rgba(14, 13, 20, 0.78);
+}
+
+:root {
+  --player-height: 84px;
+  --radius: 14px;
+  --font-body: "Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Unbounded", "Onest", system-ui, sans-serif;
+}

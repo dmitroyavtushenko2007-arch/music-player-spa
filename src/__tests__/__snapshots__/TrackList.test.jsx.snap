@@ -1,0 +1,414 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot списку треків 1`] = `
+[
+  <ul
+    className="track-list"
+  >
+    <li>
+      <article
+        className="track-card"
+      >
+        <div
+          className="track-card__cover"
+        >
+          <span>
+            🎵
+          </span>
+        </div>
+        <div
+          className="track-card__info"
+        >
+          <h3
+            className="track-card__title"
+          >
+            Test Song 1
+          </h3>
+          <p
+            className="track-card__artist"
+          >
+            Artist A
+          </p>
+        </div>
+        <span
+          className="track-card__duration"
+        >
+          2:30
+        </span>
+        <div
+          className="track-card__actions"
+        >
+          <button
+            aria-label="Відтворити: Test Song 1"
+            className="icon-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            ▶
+          </button>
+          <button
+            aria-label="Додати в обране: Test Song 1"
+            aria-pressed={false}
+            className="icon-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            🤍
+          </button>
+          <select
+            aria-label="Додати в плейліст: Test Song 1"
+            className="playlist-select"
+            disabled={true}
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              value=""
+            >
+              Немає плейлістів
+            </option>
+          </select>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article
+        className="track-card"
+      >
+        <div
+          className="track-card__cover"
+        >
+          <span>
+            🎵
+          </span>
+        </div>
+        <div
+          className="track-card__info"
+        >
+          <h3
+            className="track-card__title"
+          >
+            Test Song 2
+          </h3>
+          <p
+            className="track-card__artist"
+          >
+            Artist B
+          </p>
+        </div>
+        <span
+          className="track-card__duration"
+        >
+          3:20
+        </span>
+        <div
+          className="track-card__actions"
+        >
+          <button
+            aria-label="Відтворити: Test Song 2"
+            className="icon-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            ▶
+          </button>
+          <button
+            aria-label="Додати в обране: Test Song 2"
+            aria-pressed={false}
+            className="icon-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            🤍
+          </button>
+          <select
+            aria-label="Додати в плейліст: Test Song 2"
+            className="playlist-select"
+            disabled={true}
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              value=""
+            >
+              Немає плейлістів
+            </option>
+          </select>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article
+        className="track-card"
+      >
+        <div
+          className="track-card__cover"
+        >
+          <span>
+            🎵
+          </span>
+        </div>
+        <div
+          className="track-card__info"
+        >
+          <h3
+            className="track-card__title"
+          >
+            Test Song 3
+          </h3>
+          <p
+            className="track-card__artist"
+          >
+            Artist A
+          </p>
+        </div>
+        <span
+          className="track-card__duration"
+        >
+          4:00
+        </span>
+        <div
+          className="track-card__actions"
+        >
+          <button
+            aria-label="Відтворити: Test Song 3"
+            className="icon-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            ▶
+          </button>
+          <button
+            aria-label="Додати в обране: Test Song 3"
+            aria-pressed={false}
+            className="icon-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            🤍
+          </button>
+          <select
+            aria-label="Додати в плейліст: Test Song 3"
+            className="playlist-select"
+            disabled={true}
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              value=""
+            >
+              Немає плейлістів
+            </option>
+          </select>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article
+        className="track-card"
+      >
+        <div
+          className="track-card__cover"
+        >
+          <span>
+            🎵
+          </span>
+        </div>
+        <div
+          className="track-card__info"
+        >
+          <h3
+            className="track-card__title"
+          >
+            Test Song 4
+          </h3>
+          <p
+            className="track-card__artist"
+          >
+            Artist C
+          </p>
+        </div>
+        <span
+          className="track-card__duration"
+        >
+          2:55
+        </span>
+        <div
+          className="track-card__actions"
+        >
+          <button
+            aria-label="Відтворити: Test Song 4"
+            className="icon-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            ▶
+          </button>
+          <button
+            aria-label="Додати в обране: Test Song 4"
+            aria-pressed={false}
+            className="icon-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            🤍
+          </button>
+          <select
+            aria-label="Додати в плейліст: Test Song 4"
+            className="playlist-select"
+            disabled={true}
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              value=""
+            >
+              Немає плейлістів
+            </option>
+          </select>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article
+        className="track-card"
+      >
+        <div
+          className="track-card__cover"
+        >
+          <span>
+            🎵
+          </span>
+        </div>
+        <div
+          className="track-card__info"
+        >
+          <h3
+            className="track-card__title"
+          >
+            Test Song 5
+          </h3>
+          <p
+            className="track-card__artist"
+          >
+            Artist B
+          </p>
+        </div>
+        <span
+          className="track-card__duration"
+        >
+          5:20
+        </span>
+        <div
+          className="track-card__actions"
+        >
+          <button
+            aria-label="Відтворити: Test Song 5"
+            className="icon-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            ▶
+          </button>
+          <button
+            aria-label="Додати в обране: Test Song 5"
+            aria-pressed={false}
+            className="icon-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            🤍
+          </button>
+          <select
+            aria-label="Додати в плейліст: Test Song 5"
+            className="playlist-select"
+            disabled={true}
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              value=""
+            >
+              Немає плейлістів
+            </option>
+          </select>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article
+        className="track-card"
+      >
+        <div
+          className="track-card__cover"
+        >
+          <span>
+            🎵
+          </span>
+        </div>
+        <div
+          className="track-card__info"
+        >
+          <h3
+            className="track-card__title"
+          >
+            Test Song 6
+          </h3>
+          <p
+            className="track-card__artist"
+          >
+            Artist D
+          </p>
+        </div>
+        <span
+          className="track-card__duration"
+        >
+          3:10
+        </span>
+        <div
+          className="track-card__actions"
+        >
+          <button
+            aria-label="Відтворити: Test Song 6"
+            className="icon-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            ▶
+          </button>
+          <button
+            aria-label="Додати в обране: Test Song 6"
+            aria-pressed={false}
+            className="icon-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            🤍
+          </button>
+          <select
+            aria-label="Додати в плейліст: Test Song 6"
+            className="playlist-select"
+            disabled={true}
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              value=""
+            >
+              Немає плейлістів
+            </option>
+          </select>
+        </div>
+      </article>
+    </li>
+  </ul>,
+  <audio
+    onEnded={[Function]}
+    onLoadedMetadata={[Function]}
+    onPause={[Function]}
+    onPlay={[Function]}
+    onPlaying={[Function]}
+    onTimeUpdate={[Function]}
+  />,
+]
+`;

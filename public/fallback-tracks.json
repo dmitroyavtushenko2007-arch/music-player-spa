@@ -1,0 +1,10 @@
+[
+  { "id": "demo-1", "title": "Sunrise Loop", "artist": "Aurora Waves", "cover": "https://picsum.photos/seed/demo1/300/300", "duration": 372, "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
+  { "id": "demo-2", "title": "Midnight Drive", "artist": "Neon City", "cover": "https://picsum.photos/seed/demo2/300/300", "duration": 425, "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
+  { "id": "demo-3", "title": "Ocean Breeze", "artist": "Aurora Waves", "cover": "https://picsum.photos/seed/demo3/300/300", "duration": 345, "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" },
+  { "id": "demo-4", "title": "Quiet Forest", "artist": "Green Echo", "cover": "https://picsum.photos/seed/demo4/300/300", "duration": 305, "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" },
+  { "id": "demo-5", "title": "City Lights", "artist": "Neon City", "cover": "https://picsum.photos/seed/demo5/300/300", "duration": 355, "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" },
+  { "id": "demo-6", "title": "Summer Dance", "artist": "Sun Club", "cover": "https://picsum.photos/seed/demo6/300/300", "duration": 400, "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" },
+  { "id": "demo-7", "title": "Rainy Window", "artist": "Green Echo", "cover": "https://picsum.photos/seed/demo7/300/300", "duration": 290, "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" },
+  { "id": "demo-8", "title": "Golden Hour", "artist": "Sun Club", "cover": "https://picsum.photos/seed/demo8/300/300", "duration": 330, "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" }
+]
