@@ -28,9 +28,12 @@ export function normalizeTrack(raw) {
   return track;
 }
 
+// Адреса бекенда: на деплої береться з VITE_API_URL, локально порожня (працює proxy)
+const API_URL = typeof __API_URL__ !== "undefined" ? __API_URL__ : "";
+
 // Адреса аудіо: прямий mp3 (fallback) або наш /api/stream
 export function getStreamUrl(track) {
-  return track.audioUrl || `/api/stream/${track.id}`;
+  return track.audioUrl || `${API_URL}/api/stream/${track.id}`;
 }
 
 // Резервні дані, якщо сервер не працює
@@ -59,7 +62,7 @@ export async function searchTracks(query = "") {
 
   try {
     const response = await fetch(
-      `/api/search?q=${encodeURIComponent(q || DEFAULT_QUERY)}`
+      `${API_URL}/api/search?q=${encodeURIComponent(q || DEFAULT_QUERY)}`
     );
     if (!response.ok) {
       throw new Error("Сервер повернув помилку");
