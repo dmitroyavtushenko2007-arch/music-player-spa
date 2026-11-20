@@ -1,3 +1,4 @@
+import logging
 import os
 import re
 
@@ -6,6 +7,9 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from ytmusicapi import YTMusic
+
+logger = logging.getLogger("uvicorn.error")
+
 app = FastAPI(title="Music Player API")
 
 # CORS, щоб фронтенд міг звертатись до сервера
@@ -18,9 +22,11 @@ app.add_middleware(
 
 ytmusic = YTMusic()
 
-# простий кеш посилань на аудіо: id -> (час, url)
-stream_cache = {}
-CACHE_SECONDS = 30 * 60
+
+@app.get("/")
+def root():
+    """Перевірка, що сервер живий."""
+    return {"status": "ok"}
 
 
 @app.get("/api/search")
@@ -29,6 +35,7 @@ def search(q: str = Query(..., min_length=1)):
     try:
         results = ytmusic.search(q, filter="songs", limit=20)
     except Exception as error:
+        logger.error("search failed for %r: %s", q, error)
         raise HTTPException(status_code=502, detail=f"Помилка пошуку: {error}")
 
     tracks = []
@@ -68,9 +75,12 @@ def stream(track_id: str):
             return FileResponse(os.path.join(CACHE_DIR, name))
 
     options = {
-        "format": "bestaudio[ext=m4a]/bestaudio",
+        "format": "bestaudio[ext=m4a]/bestaudio/best",
         "quiet": True,
+        "no_color": True,
         "noplaylist": True,
+        "socket_timeout": 20,
+        "retries": 2,
         "outtmpl": os.path.join(CACHE_DIR, "%(id)s.%(ext)s"),
     }
     try:
@@ -80,6 +90,8 @@ def stream(track_id: str):
             )
             file_path = ydl.prepare_filename(info)
     except Exception as error:
+        # текст помилки потрапляє і в логи Render, і у відповідь браузеру
+        logger.error("stream failed for %s: %s", track_id, error)
         raise HTTPException(status_code=502, detail=f"Не вдалося отримати аудіо: {error}")
 
     return FileResponse(file_path)
